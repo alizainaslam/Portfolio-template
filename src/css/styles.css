@@ -6,15 +6,15 @@
 html,
 body {
   width: 100%;
-  height: 100%;
   background-color: #f5f3ef;
   font-family: Arial, Helvetica, sans-serif;
 }
-nav {
+header {
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
 }
+
 nav > h2 {
   color: #f5f3ef;
   text-align: center;
@@ -34,7 +34,10 @@ main {
 #home {
   height: 100%;
   width: 100%;
- 
+}
+#home > h1,
+.intru {
+  padding: 30px;
 }
 h1 {
   font-size: 10vw;
@@ -43,9 +46,6 @@ h1 {
   margin-bottom: 30px;
   font-weight: 600;
   line-height: 100%;
-  padding: 35px;
-  
-
 }
 .intru {
   display: flex;
@@ -54,8 +54,6 @@ h1 {
 }
 .intru > h2 {
   font-weight: 600;
-  padding:0 35px;
-  
 }
 .intru > h2 > span {
   display: inline-block;
@@ -68,5 +66,36 @@ h1 {
   background-position: center;
   margin-top: 20px;
   padding: 0;
-  opacity: .8;
+  opacity: 0.8;
+}
+/* ============ */
+/* About */
+#about {
+  padding: 30px;
+}
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1.3fr 2fr);
+  gap: 30px;
+  height: 350px;
+  margin-top: 40px;
+}
+.about-container > :nth-child(odd) {
+  border-right: 2px solid #1e1e21;
+}
+.about-heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  position: relative;
+}
+.social-icons {
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+}
+.about-explain-content > h2 {
+  font-size: 64px;
+  letter-spacing: -1px;
 }
