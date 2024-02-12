@@ -102,6 +102,7 @@ h1 {
 }
 .skill-container {
   margin: 20px;
+  overflow: hidden;
 }
 .skill-heading > h2 {
   padding: 20px;
@@ -151,4 +152,47 @@ h1 {
 .art-direction {
   margin: 10px;
   height: 150px;
+}
+
+/* <!-- wrok Page --> */
+#work {
+  margin: 0px 40px;
+  display: flex;
+  gap: 40px;
+  font-size: 4vw;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.work-page-image {
+  background-image: url("https://assets-global.website-files.com/64589fb989b2b3e8783db8c8/645cad1988b7ca338942d0b3_project-03-p-2000.webp");
+}
+
+/* camera-container */
+.camera-container {
+  margin: 10px 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.camera-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.camera-tages {
+  display: flex;
+  gap: 30px;
+}
+.camera-tages * {
+  background-color: #1e1e21;
+  color: #f5f3ef;
+  padding: 10px 15px;
+  border-radius: 500px;
+  font-size: 0.9rem;
+}
+.noise-page-image {
+  background-image: url("https://images.unsplash.com/photo-1594922234647-4ade6282c369?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
