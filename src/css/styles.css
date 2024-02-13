@@ -196,3 +196,43 @@ h1 {
 .noise-page-image {
   background-image: url("https://images.unsplash.com/photo-1594922234647-4ade6282c369?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
+
+/* client-container */
+#client-container {
+  margin: 40px;
+  display: flex;
+  height: 70vh;
+}
+.left-side {
+  height: 100%;
+  border-right: 2px solid #1e1e21;
+  width: 50%;
+}
+.right-side {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.top-div,
+.bottom-div {
+  display: flex;
+  width: 100%;
+  padding: 40px;
+}
+.top-div {
+  border-bottom: 2px solid #1e1e21;
+}
+
+.top-left-container,
+.bottom-left-container {
+  border-right: 2px solid #1e1e21;
+  padding-right: 10px;
+  width: 50%;
+}
+.top-right-container,
+.bottom-right-container {
+  padding-left: 20px;
+  width: 50%;
+  text-align: left;
+}
