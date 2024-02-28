@@ -6,31 +6,28 @@
     <link rel="stylesheet" href="src/css/styles.css" />
     <title>Static Page - Clone</title>
   </head>
+
   <body>
-    <!-- --------- -->
     <!-- NavBar -->
     <header>
       <nav>
         <h2>Menu</h2>
       </nav>
     </header>
-
-    <!-- --------- -->
     <main>
       <!-- Home Page -->
-      <div id="home">
+      <div id="home" class="section">
         <h1>Bent Lindberg <br />Digital Designer</h1>
-        <div class="location-container">
+        <div class="location">
           <h2>(Berlin, Germany)</h2>
-          <h2><span>&rarr;</span>Scroll Down</h2>
+          <h2 class="scroll"><span>&rarr;</span>Scroll Down</h2>
         </div>
-        <!-- --------- -->
         <div class="img-container"></div>
       </div>
-      <!-- ========== -->
+
       <!-- About Page -->
-      <div id="about">
-        <div class="about-conatiner">
+      <div id="about" class="section">
+        <div class="about-container">
           <h2>
             As a digital designer, I focus on producing top-notch and impactful
             digital experiences.
@@ -40,51 +37,51 @@
             <div class="social-icons">FB, LI, X</div>
           </div>
         </div>
-        <!-- --------- -->
-        <div class="skill-container">
-          <div class="skill-heading">
-            <h2>(What I Do)</h2>
-          </div>
-          <div class="skills">
-            <div class="skill-top-container">
-              <div class="digital-design">
-                <h2>Digital Design</h2>
-                <p>
-                  I create stunning digital designs that engage and inspire your
-                  audience. Let me bring your brand to life with my skills.
-                </p>
-              </div>
-              <div class="art-direction">
-                <h2>Art Direction</h2>
-                <p>
-                  My art direction expertise ensures that your project is on
-                  brand, on message, and visually stunning. Let's tell your
-                  story together.
-                </p>
-              </div>
+      </div>
+
+      <!-- Skill Page -->
+      <div id="skill" class="section">
+        <div class="skill-heading">
+          <h2>(What I Do)</h2>
+        </div>
+        <div class="skills">
+          <div class="skill-top-container">
+            <div class="digital-design">
+              <h2>Digital Design</h2>
+              <p>
+                I create stunning digital designs that engage and inspire your
+                audience. Let me bring your brand to life with my skills.
+              </p>
             </div>
-            <div class="skill-bottom-container">
-              <div class="interaction-design">
-                <h2>Interaction Design</h2>
-                <p>
-                  I specialize in designing intuitive user experiences that are
-                  both functional and beautiful.
-                </p>
-              </div>
-              <div class="motion-design">
-                <h2>Motion Design</h2>
-                <p>
-                  From animated logos to explainer videos, I bring your message
-                  to life with visually stunning motion design.
-                </p>
-              </div>
+            <div class="art-direction">
+              <h2>Art Direction</h2>
+              <p>
+                My art direction expertise ensures that your project is on
+                brand, on message, and visually stunning. Let's tell your story
+                together.
+              </p>
+            </div>
+          </div>
+          <div class="skill-bottom-container">
+            <div class="interaction-design">
+              <h2>Interaction Design</h2>
+              <p>
+                I specialize in designing intuitive user experiences that are
+                both functional and beautiful.
+              </p>
+            </div>
+            <div class="motion-design">
+              <h2>Motion Design</h2>
+              <p>
+                From animated logos to explainer videos, I bring your message to
+                life with visually stunning motion design.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <!-- ========== -->
       <!-- Work Page -->
-      <div id="work">
+      <div id="work" class="section">
         <h3>Work</h3>
         <h3>Work</h3>
         <h3>Work</h3>
@@ -92,133 +89,124 @@
         <h3>Work</h3>
         <h3>Work</h3>
         <h3>Work</h3>
-      </div>
-      <!-- Image bottom side of work page -->
-      <div class="img-container work-page-image"></div>
-      <!--  work explain -->
-      <div class="camera-container">
-        <h1>Camera</h1>
+        <div class="img-container"></div>
 
-        <div class="camera-div">
-          <p style="opacity: 0.8">
-            A cutting-edge digital platform designed to revolutionize the way
-            people interact with technology.
-          </p>
-          <div class="camera-tages">
-            <h3 class="design-tag">Design</h3>
-            <h3 class="design-year-tag">2023</h3>
+        <div class="camera section">
+          <h1>Camera</h1>
+          <div class="camera-container">
+            <p style="opacity: 0.8; padding-bottom: 30px">
+              A cutting-edge digital platform designed to revolutionize the way
+              people interact with technology.
+            </p>
+            <div class="additional-info">
+              <h3 class="design-tag">Design</h3>
+              <h3 class="design-year-tag">2023</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="img-container noise-image"></div>
+
+        <div class="noise section">
+          <h1>Noise</h1>
+          <div class="noise-container">
+            <p style="opacity: 0.8">
+              A cutting-edge digital platform designed to revolutionize the way
+              people interact with technology.
+            </p>
+            <div class="additional-info">
+              <h3 class="design-tag">Design</h3>
+              <h3 class="design-year-tag">2023</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="img-container robot-image"></div>
+
+        <div class="robot section">
+          <h1>Robot</h1>
+          <div class="noise-container">
+            <p style="opacity: 0.8">
+              A cutting-edge digital platform designed to revolutionize the way
+              people interact with technology.
+            </p>
+            <div class="additional-info">
+              <h3 class="design-tag">Motion Design</h3>
+              <h3 class="design-year-tag">2023</h3>
+            </div>
           </div>
         </div>
       </div>
-      <div class="img-container noise-page-image"></div>
 
-      <div class="noise camera-container">
-        <h1>Noise</h1>
-
-        <div class="camera-section">
-          <p style="opacity: 0.8">
-            A cutting-edge digital platform designed to revolutionize the way
-            people interact with technology.
-          </p>
-          <div class="camera-tages">
-            <h3 class="design-tag">Design</h3>
-            <h3 class="design-year-tag">2023</h3>
-          </div>
-        </div>
-      </div>
       <!-- Client Section -->
-      <div id="client-container">
-        <div class="left-side">
+      <div id="client" class="section">
+        <div class="heading">
           <h2>(My Clients)</h2>
         </div>
-        <div class="right-side">
-          <div class="top-div">
-            <div class="top-left-container">
-              <h2>Exceptional digital design and user experience.</h2>
-              <p style="opacity: 0.7">
-                Bent's digital design skills are unmatched. He transformed our
-                website into a beautiful and functional work of art that
-                exceeded our expectations.
-              </p>
-            </div>
-            <div class="top-right-container">
-              <h2>Art direction that captured our essence.</h2>
-              <p style="opacity: 0.7">
-                Working with Bent on art direction was a pleasure. He listened
-                to our ideas and brought his creativity to the table, resulting
-                in a stunning visual brand identity.
-              </p>
-            </div>
+        <div class="client-reviews">
+          <div class="top-container">
+            <div class="motion-design"></div>
+            <div class="art-inc"></div>
           </div>
-          <!-- ============ -->
-          <div class="bottom-div">
-            <div class="bottom-left-container">
-              <h2>Bent's interaction design expertise delivered.</h2>
-              <p style="opacity: 0.7">
-                Bent's interaction design made our app user-friendly and
-                intuitive. His creativity and attention to detail resulted in a
-                product that exceeded our expectations
-              </p>
-            </div>
-            <div class="bottom-right-container">
-              <h2>Captivating motion design that brought our brand to life.</h2>
-              <p style="opacity: 0.7">
-                Bent's motion design is exceptional. He brought our brand to
-                life with stunning animations that captivated our audience.
-              </p>
-            </div>
+          <div class="bottom-container">
+            <div class="teach-start"></div>
+            <div class="creative-solution"></div>
           </div>
         </div>
       </div>
-      <!-- footer -->
-      <footer>
-        <div class="footer-heading">
-          <h3 class="f-h3">(Connect)</h3>
-          <h1>Let's Talk</h1>
-          <button>Get in Touch</button>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-heading">
+        <h3 class="f-h3">(Connect)</h3>
+        <h1 style="color: #f5f3ef">Let's Talk</h1>
+        <button>Get in Touch</button>
+      </div>
+      <!-- ======= -->
+      <div class="footer-nav-items">
+        <div class="footer-nav-container">
+          <h3 class="f-h3">(Pages)</h3>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+          <button>More Templates</button>
         </div>
         <!-- ======= -->
-        <div class="footer-nav-items">
-          <div class="footer-nav-container">
-            <h3 class="f-h3">(Pages)</h3>
-            <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
-              <button>More Templates</button>
-            </ul>
-          </div>
-          <!-- ======= -->
-          <div class="footer-cms-container">
-            <h3 class="f-h3">(CMS)</h3>
-            <ul>
-              <li>Work</li>
-              <li>Work Single</li>
-              <li>Blog</li>
-              <li>Blog Single</li>
-              <li>Shop</li>
-            </ul>
-          </div>
-          <!-- ======= -->
-          <div class="footer-pages-container">
-            <h3 class="f-h3">(Utility Pages)</h3>
-            <ul>
-              <li>404 Erroe</li>
-              <li>Password</li>
-              <li>Styleguide</li>
-              <li>Licensing</li>
-              <li>Changelog</li>
-            </ul>
-          </div>
+        <div class="footer-cms-container">
+          <h3 class="f-h3">(CMS)</h3>
+          <ul>
+            <li>Work</li>
+            <li>Work Single</li>
+            <li>Blog</li>
+            <li>Blog Single</li>
+            <li>Shop</li>
+          </ul>
         </div>
+        <!-- ======= -->
+        <div class="footer-pages-container">
+          <h3 class="f-h3">(Utility Pages)</h3>
+          <ul>
+            <li>404 Erroe</li>
+            <li>Password</li>
+            <li>Styleguide</li>
+            <li>Licensing</li>
+            <li>Changelog</li>
+          </ul>
+        </div>
+      </div>
 
-        <!-- copyRight -->
-        <p style="color: #f5f3ef">
-          &copy; Developer
-          <a style="color: #f5f3ef;" href="https://www.linkedin.com/in/alizainaslam/">Ali Zain Aslam</a
-          >. All rights reserved.
-        </p>
-      </footer>
-    </main>
+      <!-- copyRight -->
+      <p style="color: #f5f3ef">
+        &copy; Developer
+        <a
+          style="color: #f5f3ef"
+          href="https://www.linkedin.com/in/alizainaslam/"
+          >Ali Zain Aslam</a
+        >. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
