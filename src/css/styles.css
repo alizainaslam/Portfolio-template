@@ -70,28 +70,8 @@ nav > h2 {
   padding: 25px;
   height: 300px;
 }
-.about-container {
-  display: grid;
-  grid-template-columns: 65% auto;
-  gap: 30px;
-}
-.about-container > h3 {
-  font-size: 4.5rem;
-  letter-spacing: -2px;
-  line-height: 99%;
-}
-.about-me {
-  text-align: start;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
-/* Responsive Screen */
-@media screen and (min-width: 510px) and (max-width: 768px) {
+@media screen and (min-width: 425px) and (max-width: 768px) {
   .img-container {
     height: 450px;
   }
