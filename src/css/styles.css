@@ -67,64 +67,61 @@ nav > h2 {
 
 /* ------- */
 #about {
-  padding: 25px;
-  height: 300px;
+  padding: 25px 20px;
+  width: 100%;
+  height: auto;
 }
-
-@media screen and (min-width: 425px) and (max-width: 768px) {
-  .img-container {
-    height: 450px;
-  }
-  .about-container {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .about-container > h3 {
-    font-size: 2rem;
-  }
-  .about-me {
-    font-size: 1rem;
-  }
-  .social-icons {
-    margin-top: 15px;
-  }
+.about-container {
+  display: flex;
 }
-
-@media screen and (max-width: 510px) {
+.about-container > h3 {
+  font-size: 5.7vw;
+  flex-basis: 60%;
+  line-height: 100%;
+  letter-spacing: -4.5px;
+  border-right: 1px solid black;
+}
+.about-me {
+  font-size: 3vw;
+  flex-basis: 40%;
+}
+@media screen and (max-width: 768px) {
+  #home > h1 {
+    letter-spacing: -2px;
+    line-height: 100%;
+  }
+  nav > h2 {
+    font-size: 0.8rem;
+    padding: 0.7rem 1rem;
+  }
   .scroll {
     display: none;
   }
-  header {
-    padding: 20px 10px;
-  }
-  nav > h2 {
-    font-size: 0.9rem;
-    padding: 0.8rem 1.2rem;
-  }
-  #home > h1 {
-    padding: 20px 10px;
-    letter-spacing: -2px;
-  }
-  .location {
-    padding: 4px 10px;
-  }
   .img-container {
-    height: 350px;
+    height: 400px;
   }
   .about-container {
     display: flex;
-    flex-direction: row-reverse;
     flex-direction: column-reverse;
   }
   .about-container > h3 {
-    font-size: 1.5rem;
-    letter-spacing: normal;
-    line-height: auto;
+    font-size: 8vw;
+    line-height: 100%;
+    letter-spacing: 0px;
+    border-bottom: 1px solid black;
+    border-right: none;
   }
   .about-me {
-    font-size: 1rem;
+    font-size: 5vw;
+    margin-bottom: 20px;
   }
   .social-icons {
-    margin-top: 15px;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #home > h1 {
+    letter-spacing: 0px;
+    line-height: 100%;
   }
 }
