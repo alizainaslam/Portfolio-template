@@ -11,6 +11,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
+li {
+  list-style: none;
+}
 header {
   position: fixed;
   width: 100%;
@@ -74,17 +77,35 @@ nav > h2 {
 .about-container {
   display: flex;
 }
-.about-container > h3 {
+.about-heading {
   font-size: 5.7vw;
   flex-basis: 60%;
   line-height: 100%;
   letter-spacing: -4.5px;
-  border-right: 1px solid black;
+  margin-right: 30px;
+  padding-right: 10px;
+}
+
+.up-to-down-border {
+  border-bottom: 2px solid black;
 }
 .about-me {
   font-size: 3vw;
   flex-basis: 40%;
+  position: relative;
 }
+.social-icons {
+  position: absolute;
+  bottom: 0;
+}
+.social-icons ul {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Responsive Screen */
 @media screen and (max-width: 768px) {
   #home > h1 {
     letter-spacing: -2px;
@@ -104,12 +125,15 @@ nav > h2 {
     display: flex;
     flex-direction: column-reverse;
   }
-  .about-container > h3 {
+  .about-heading {
     font-size: 8vw;
     line-height: 100%;
     letter-spacing: 0px;
-    border-bottom: 1px solid black;
     border-right: none;
+    padding-bottom: 30px;
+  }
+  .left-to-right-border {
+    border-bottom: 2px solid black;
   }
   .about-me {
     font-size: 5vw;
@@ -117,6 +141,10 @@ nav > h2 {
   }
   .social-icons {
     padding-top: 20px;
+    position: static;
+  }
+  li img {
+    width: 50px;
   }
 }
 @media screen and (max-width: 350px) {
