@@ -123,10 +123,9 @@ nav > h2 {
     flex-direction: column-reverse;
   }
   .about-heading {
-    font-size: 8vw;
+    font-size: 12vw;
     line-height: 100%;
     letter-spacing: 0px;
-    padding-top: 10px;
     border-right: none;
     padding-bottom: 40px;
     border-bottom: 2px solid #1e1e21;
@@ -135,12 +134,11 @@ nav > h2 {
 
   .about-me {
     font-size: 5vw;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .social-icons {
-    padding-top: 15px;
+    padding-top: 10px;
     position: static;
-    border-bottom: 2px solid #1e1e21;
   }
   li img {
     width: 40px;
