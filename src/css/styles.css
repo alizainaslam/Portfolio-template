@@ -84,11 +84,9 @@ nav > h2 {
   letter-spacing: -4.5px;
   margin-right: 30px;
   padding-right: 10px;
+  border-right: 2px solid #1e1e21;
 }
 
-.up-to-down-border {
-  border-bottom: 2px solid black;
-}
 .about-me {
   font-size: 3vw;
   flex-basis: 40%;
@@ -102,7 +100,6 @@ nav > h2 {
   display: flex;
   gap: 20px;
   width: 100%;
-  cursor: pointer;
 }
 
 /* Responsive Screen */
@@ -129,24 +126,27 @@ nav > h2 {
     font-size: 8vw;
     line-height: 100%;
     letter-spacing: 0px;
+    padding-top: 10px;
     border-right: none;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #1e1e21;
+    width: 100%;
   }
-  .left-to-right-border {
-    border-bottom: 2px solid black;
-  }
+
   .about-me {
     font-size: 5vw;
     margin-bottom: 20px;
   }
   .social-icons {
-    padding-top: 20px;
+    padding-top: 15px;
     position: static;
+    border-bottom: 2px solid #1e1e21;
   }
   li img {
-    width: 50px;
+    width: 40px;
   }
 }
+
 @media screen and (max-width: 350px) {
   #home > h1 {
     letter-spacing: 0px;
