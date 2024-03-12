@@ -70,7 +70,9 @@ nav > h2 {
 
 /* About */
 #about,
-#skill {
+#skill,
+#work,
+.work-info {
   padding: 15px 20px;
   width: 100%;
   height: auto;
@@ -107,32 +109,31 @@ nav > h2 {
 }
 
 /* Skill */
+.skill-container {
+  border-bottom: none;
+}
 .skill-heading {
   flex: 1;
   margin-right: 30px;
   border-right: 2px solid #1e1e21;
 }
-
 .skills {
   flex: 2.5;
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
-
 .skill-top-container {
   display: flex;
   gap: 30px;
-  border-bottom: 2px solid #1e1e21;
+  border-bottom: 1.5px solid #1e1e21;
   margin-bottom: 25px;
   padding-bottom: 25px;
 }
-
 .digital-design,
 .interaction-design {
-  border-right: 2px solid #1e1e21;
+  border-right: 1.5px solid #1e1e21;
   padding-right: 25px;
   flex: 1;
 }
-
 .skill-bottom-container {
   display: flex;
   gap: 30px;
@@ -142,6 +143,49 @@ nav > h2 {
 }
 .motion-design {
   flex: 1;
+}
+.skills p {
+  padding-top: 8px;
+  letter-spacing: 1.1px;
+}
+
+/* Work */
+.work-heading {
+  display: flex;
+  font-size: 3.5vw;
+  justify-content: space-between;
+  font-weight: bolder;
+  overflow: hidden;
+}
+.work-info {
+  font-size: 3.6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-info h1 {
+  flex: 1;
+}
+.work-info .work-container {
+  flex: 1;
+}
+.additional-info {
+  display: flex;
+  font-size: 1vw;
+  font-weight: normal;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.work-info p {
+  padding: 8px 0px 15px 0px;
+  font-size: 2vw;
+}
+.design-tag,
+.design-year-tag {
+  background-color: #1e1e21;
+  color: #f5f3ef;
+  border-radius: 500px;
+  padding: 12px 17px;
 }
 /* Responsive Screen */
 @media screen and (max-width: 768px) {
@@ -205,8 +249,30 @@ nav > h2 {
   .digital-design,
   .interaction-design {
     border-right: none;
-    border-bottom: 2px solid #1e1e21;
+    border-bottom: 1.5px solid #1e1e21;
     padding-bottom: 25px;
+  }
+
+  /* Work */
+  .work-heading {
+    align-items: center;
+    display: flex;
+    font-size: 5vw;
+    gap: 10px;
+    overflow: hidden;
+    font-weight: bolder;
+  }
+  .work-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .work-info p {
+    padding: 8px 0px 15px 0px;
+    font-size: 3.5vw;
+  }
+  .design-tag,
+  .design-year-tag {
+    font-size: 3vw;
   }
 }
 
