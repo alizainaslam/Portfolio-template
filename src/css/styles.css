@@ -73,21 +73,21 @@ nav > h2 {
 /* Images as a background */
 .img-container {
   background: url(https://assets-global.website-files.com/64589fb989b2b33c593db89d/6458a6db645ec6a527000cfa_home-hero-p-2000.webp);
-  height: 70vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   margin: 20px 0px;
 }
 .work-image {
   background: url(https://assets-global.website-files.com/64589fb989b2b33c593db89d/6458a6db645ec6a527000cfa_home-hero-p-2000.webp);
-  height: 70vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   margin: 20px 0px;
 }
 .noise-image {
   background: url(https://images.unsplash.com/photo-1675344839533-dfa97bb8f626?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  height: 70vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   margin: 20px 0px;
@@ -104,7 +104,8 @@ nav > h2 {
 #about,
 #skill,
 #work,
-.work-info {
+.work-info,
+#client {
   padding: 15px 20px;
   width: 100%;
   height: auto;
@@ -215,6 +216,7 @@ p {
   padding: 8px 0px 15px 0px;
   font-size: var(--font-size);
 }
+
 .design-tag,
 .design-year-tag {
   background-color: var(--secondary-color);
@@ -226,6 +228,11 @@ p {
   font-size: 14px;
   font-weight: 600;
   line-height: 100%;
+}
+/* Client */
+.client-container {
+  border-top: var(--border);
+  padding-top: 15px;
 }
 /* Responsive Screen */
 @media screen and (max-width: 768px) {
@@ -292,8 +299,7 @@ p {
 
   /* Work */
   .work-heading {
-    align-items: center;
-    font-size: 5vw;
+    font-size: 2rem;
     gap: 10px;
     overflow: hidden;
     font-weight: bolder;
