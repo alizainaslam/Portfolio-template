@@ -110,7 +110,7 @@ nav > h2 {
 }
 /* About */
 .about-container,
-.skill-container {
+.skill-client-container {
   display: flex;
   padding-bottom: 30px;
   border-bottom: var(--border);
@@ -140,19 +140,19 @@ nav > h2 {
 }
 
 /* Skill */
-.skill-container {
+.skill-client-container {
   border-bottom: none;
 }
-.skill-heading {
+.skill-client-heading {
   flex: 1;
   margin-right: 30px;
   border-right: var(--border);
 }
-.skills {
+.skills-clients {
   flex: 2.5;
   font-size: 2vw;
 }
-.skill-top-container {
+.skill-client-top-container {
   display: flex;
   gap: 30px;
   border-bottom: var(--border);
@@ -165,7 +165,7 @@ nav > h2 {
   padding-right: 25px;
   flex: 1;
 }
-.skill-bottom-container {
+.skill-client-bottom-container {
   display: flex;
   gap: 30px;
 }
@@ -175,7 +175,7 @@ nav > h2 {
 .motion-design {
   flex: 1;
 }
-.skills p {
+.skills-clients p {
   padding-top: 8px;
 }
 
@@ -197,6 +197,7 @@ nav > h2 {
 }
 .work-info h1 {
   flex: 1;
+  line-height: 100%;
 }
 .work-info .work-container {
   flex: 1;
@@ -231,7 +232,7 @@ p {
 /* Client */
 .client-container {
   border-top: var(--border);
-  padding-top: 15px;
+  padding-top: 30px;
 }
 /* Responsive Screen */
 @media screen and (max-width: 768px) {
@@ -274,19 +275,19 @@ p {
   li img {
     width: 40px;
   }
-  .skill-container {
+  .skill-client-container {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
   }
-  .skills {
+  .skills-clients {
     font-size: 4vw;
   }
-  .skill-heading {
+  .skill-client-heading {
     border: none;
   }
-  .skill-top-container,
-  .skill-bottom-container {
+  .skill-client-top-container,
+  .skill-client-bottom-container {
     flex-direction: column;
   }
   .digital-design,
