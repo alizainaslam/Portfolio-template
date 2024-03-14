@@ -209,6 +209,9 @@ nav > h2 {
   justify-content: flex-end;
   gap: 15px;
 }
+.skills-clients p {
+  min-height: 160px;
+}
 p {
   padding: 8px 0px 15px 0px;
   font-size: var(--font-size);
@@ -233,6 +236,20 @@ p {
 .client-container {
   border-top: var(--border);
   padding-top: 30px;
+}
+.clients-item-author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.author-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.text-meta h3 {
+  font-size: calc(14px + 0.390625vw);
 }
 /* Responsive Screen */
 @media screen and (max-width: 768px) {
@@ -316,6 +333,9 @@ p {
     font-size: 14px;
     font-weight: 600;
     padding: 10px 15px;
+  }
+  .skills-clients p {
+    min-height: auto;
   }
 }
 
