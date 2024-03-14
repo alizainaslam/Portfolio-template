@@ -100,16 +100,15 @@ nav > h2 {
   margin: 20px 0px;
 }
 
-/* About */
 #about,
 #skill,
-#work,
 .work-info,
 #client {
   padding: 15px 20px;
   width: 100%;
   height: auto;
 }
+/* About */
 .about-container,
 .skill-container {
   display: flex;
@@ -178,26 +177,23 @@ nav > h2 {
 }
 .skills p {
   padding-top: 8px;
-  letter-spacing: 1.1px;
 }
 
 /* Work */
 .work-heading {
   display: flex;
-  justify-content: space-between;
-  font-weight: bolder;
   overflow: hidden;
   font-weight: 600;
   line-height: 90%;
   font-size: 4rem;
-  gap: 10px;
+  justify-content: center;
+  gap: 30px;
 }
 
 .work-info {
   font-size: 3.6vw;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .work-info h1 {
   flex: 1;
@@ -210,11 +206,14 @@ nav > h2 {
   font-size: 1vw;
   font-weight: normal;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 15px;
 }
 p {
   padding: 8px 0px 15px 0px;
   font-size: var(--font-size);
+  opacity: 0.8;
+  letter-spacing: 1.1px;
+  line-height: 130%;
 }
 
 .design-tag,
@@ -308,7 +307,9 @@ p {
     flex-direction: column;
     align-items: flex-start;
   }
-
+  .additional-info {
+    justify-content: flex-start;
+  }
   .design-tag,
   .design-year-tag {
     font-size: 14px;
