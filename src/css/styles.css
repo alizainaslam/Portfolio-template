@@ -378,6 +378,10 @@ footer {
 /* Responsive Screen. - Target: max-width: 768px  */
 @media screen and (max-width: 768px) {
   /* Home */
+  .hide-nav {
+    top: 8px;
+    right: 12px;
+  }
   #home > h1 {
     letter-spacing: -2px;
     line-height: 100%;

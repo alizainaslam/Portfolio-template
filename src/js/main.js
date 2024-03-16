@@ -2,6 +2,7 @@ const loadingContainer = document.querySelector(".loading-container");
 const showNavContainer = document.querySelector(".show-nav");
 const hideNav = document.querySelector(".hide-nav");
 const navContainer = document.querySelector(".nav-container");
+const listLink = document.querySelectorAll(".list-link");
 
 setTimeout(() => {
   loadingContainer.style.zIndex = 0;
@@ -16,7 +17,12 @@ gsap.to(".child", {
   stagger: 0.1,
 });
 
-const toggleNavContainer = showNavContainer.addEventListener("click", () => {
+Array.from(listLink).forEach((link) => {
+  link.addEventListener("click", () => {
+    navContainer.style.display = "none";
+  });
+});
+showNavContainer.addEventListener("click", () => {
   navContainer.style.display = "none" ? "block" : "null";
 });
 hideNav.addEventListener("click", () => {
