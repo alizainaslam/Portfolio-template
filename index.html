@@ -14,7 +14,7 @@
     <!-- Credit link : "https://bent-template.webflow.io/" -->
   </head>
   <body>
-    <div class="lodaing-container">
+    <div class="loading-container">
       <div class="child"></div>
       <div class="child"></div>
       <div class="child"></div>
@@ -23,7 +23,25 @@
     <!-- NavBar -->
     <header>
       <nav>
-        <h2>Menu</h2>
+        <!-- Toggle-button: Show nav container -->
+        <button class="show-nav">Menu</button>
+
+        <!-- Nav-container -->
+        <div class="nav-container">
+          <div class="nav-items">
+            <!-- Toggle-button: Hide nav container -->
+            <img src="src/images/hide-nav.svg" alt="" class="hide-nav" />
+            <div class="nav-links">
+              <ul>
+                <li class="list-link"><a href="#">Home</a></li>
+                <li class="list-link"><a href="#about">About</a></li>
+                <li class="list-link"><a href="#skill">Skill</a></li>
+                <li class="list-link"><a href="#work">Work</a></li>
+                <li class="list-link"><a href="#client">Client</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
