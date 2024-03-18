@@ -4,7 +4,9 @@ const hideNav = document.querySelector(".hide-nav");
 const navContainer = document.querySelector(".nav-container");
 const listLink = document.querySelectorAll(".list-link");
 
+// Timeline
 const tl = gsap.timeline();
+
 // Landing page: Each child should be go top synchronously.
 tl.to(".child", {
   height: 0,
@@ -12,6 +14,8 @@ tl.to(".child", {
   ease: "circ.out",
   stagger: 0.1,
 });
+
+// Hide nav-container whenever click on a tag
 
 Array.from(listLink).forEach((link) => {
   link.addEventListener("click", () => {
@@ -26,6 +30,8 @@ Array.from(listLink).forEach((link) => {
     })();
   });
 });
+
+// Show nav-container
 
 showNavContainer.addEventListener("click", () => {
   navContainer.style.display = "none" ? "block" : null;
@@ -55,6 +61,9 @@ showNavContainer.addEventListener("click", () => {
     });
   })();
 });
+
+// Hide nav-container
+
 hideNav.addEventListener("click", () => {
   navContainer.style.display = "block" ? "none" : "null";
   (function () {
