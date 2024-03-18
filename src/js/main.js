@@ -4,16 +4,11 @@ const hideNav = document.querySelector(".hide-nav");
 const navContainer = document.querySelector(".nav-container");
 const listLink = document.querySelectorAll(".list-link");
 
-setTimeout(() => {
-  loadingContainer.style.zIndex = 0;
-  loadingContainer.style.display = "none";
-}, 1500);
-
 const tl = gsap.timeline();
 // Landing page: Each child should be go top synchronously.
 tl.to(".child", {
   height: 0,
-  duration: 1.4,
+  duration: 0.6,
   ease: "circ.out",
   stagger: 0.1,
 });
@@ -21,18 +16,33 @@ tl.to(".child", {
 Array.from(listLink).forEach((link) => {
   link.addEventListener("click", () => {
     navContainer.style.display = "none";
+    (function () {
+      tl.to(".child", {
+        height: 0,
+        duration: 0.5,
+        ease: "circ.out",
+        stagger: 0.1,
+      });
+    })();
   });
 });
 
 showNavContainer.addEventListener("click", () => {
   navContainer.style.display = "none" ? "block" : null;
   (function () {
+    tl.to(".child", {
+      height: "100%",
+      duration: 0.2,
+      ease: "circ.in",
+      stagger: 0.1,
+    });
     tl.from(".nav-container", {
       height: 0,
-      duration: 1,
+      duration: 0.5,
       ease: "circ.in",
       y: -120,
     });
+
     tl.from(".hide-nav", {
       opacity: 0,
       duration: 0.3,
@@ -47,4 +57,12 @@ showNavContainer.addEventListener("click", () => {
 });
 hideNav.addEventListener("click", () => {
   navContainer.style.display = "block" ? "none" : "null";
+  (function () {
+    tl.to(".child", {
+      height: 0,
+      duration: 0.5,
+      ease: "circ.out",
+      stagger: 0.1,
+    });
+  })();
 });
