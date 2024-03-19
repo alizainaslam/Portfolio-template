@@ -8,11 +8,22 @@ const listLink = document.querySelectorAll(".list-link");
 const tl = gsap.timeline();
 
 // Landing page: Each child should be go top synchronously.
-tl.to(".child", {
-  height: 0,
-  duration: 0.6,
-  ease: "circ.out",
-  stagger: 0.1,
+const gsapChildFunc = () => {
+  tl.to(".child", {
+    height: 0,
+    duration: 0.6,
+    ease: "circ.out",
+    stagger: 0.1,
+  });
+};
+gsapChildFunc();
+
+// Arrow;
+gsap.from(".arrow", {
+  y: 3,
+  duration: 1,
+  repeat: -1,
+  yoyo: true,
 });
 
 // Hide nav-container whenever click on a tag
@@ -20,14 +31,7 @@ tl.to(".child", {
 Array.from(listLink).forEach((link) => {
   link.addEventListener("click", () => {
     navContainer.style.display = "none";
-    (function () {
-      tl.to(".child", {
-        height: 0,
-        duration: 0.5,
-        ease: "circ.out",
-        stagger: 0.1,
-      });
-    })();
+    gsapChildFunc();
   });
 });
 

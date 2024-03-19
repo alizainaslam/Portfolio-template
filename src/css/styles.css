@@ -257,13 +257,15 @@ header {
 
 /* Work */
 .work-heading {
-  display: flex;
   overflow: hidden;
+  display: flex;
   font-weight: 600;
   line-height: 90%;
   font-size: 4rem;
   justify-content: center;
   gap: 30px;
+  text-transform: uppercase;
+  padding: 0px 25px;
 }
 .work-info {
   font-size: 3.6vw;
